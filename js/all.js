@@ -14,9 +14,9 @@ function timeAccurate(){
    let minutes=time.getMinutes();
    let seconds=time.getSeconds();
    //歸零所有零件角度
-   hourAngle=(hours-12)*30-90;
-   minuteAngle=minutes*6;
    secondAngle=seconds*6-180;
+   minuteAngle=minutes*6;
+   hourAngle=(hours-12)*30-90+(minuteAngle/2); //更精確的時針位置
    //校準時針
    hour.style.transform =`rotate(${hourAngle}deg)`;
    //校準分針
