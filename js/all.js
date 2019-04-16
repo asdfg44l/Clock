@@ -32,13 +32,13 @@ function timeMoving(){
 
     //秒針移動
     secondAngle+=6;
-    secondCounter+=1;
+    secondCounter+=1; 
     second.style.transform=`rotate(${secondAngle}deg)`;
     if(secondAngle == 360){secondAngle =0};
 
     //每過10秒分針移動
     if( secondCounter == 10){
-      minuteAngle+=6;
+      minuteAngle+=1;
       if(minuteAngle == 360){minuteAngle =0};
       minute.style.transform=`rotate(${minuteAngle}deg)`;
       secondCounter=0;  //歸零
