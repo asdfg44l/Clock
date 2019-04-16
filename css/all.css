@@ -1,0 +1,35 @@
+@import url(css_reset.css);
+
+body{
+    background: #293B29;
+}
+.clock{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    margin: 100px auto;
+    background:url(../img/clock-bg.svg) no-repeat center;
+
+}
+.clock img{
+    display: block;   
+    position: absolute;
+}
+#second{ 
+    z-index: 6;
+    top:48%;
+    left:48%;  
+    transform-origin: 50% 2%;
+}
+#minute{
+    z-index: 5;
+    top:23%;
+    left:48.8%;
+    transform-origin: 50% 95%;
+} 
+#hour{
+    z-index: 4;
+    top:48%;
+    left:49%;
+    transform-origin: 5% 50%;
+}
